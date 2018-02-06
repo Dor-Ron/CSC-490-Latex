@@ -1,0 +1,81 @@
+\documentclass{article}
+
+\usepackage{amsthm, amssymb, amsmath}
+\usepackage[margin=1in]{geometry}
+
+% used in maketitle
+\title{Week 2 Assignment}
+\author{Dor Rondel}
+
+% nicer formatting b/w paragraphs
+\setlength{\parskip}{6pt}
+
+% set the style for the theorems; optional
+\theoremstyle{definition}
+% define new environments: thm, prop
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{fact}[thm]{Fact}
+\newtheorem*{ex*}{Example}
+
+\begin{document}
+\maketitle
+
+% Problem 1
+\begin{prop}
+If $A$ is a set then $A\cup\emptyset=A$.
+\end{prop} 
+
+\begin{proof}
+To show $A\cup\emptyset=A$, we show $A \cup\emptyset\subseteq A$ and $A \subseteq A \cup \emptyset$ - of course, given that $A$ is a set. 
+
+To prove the former, we take an arbitrary element $x$ in $A \cup \emptyset$ and show $x \in A$. By definition of union, if $x \in A \cup \emptyset$ then either $x \in A$ or $x \in \emptyset$. But $\emptyset$ has no elements; hence if $x \in A \cup \emptyset$ then $x \in A$. Thus $A \subseteq A \cup \emptyset$. 
+
+Now suppose $x$ is an arbitrary element of $A$. Then clearly $x \in A$ or $x \in \emptyset$, so if $x \in A$, then $x \in A \cup \emptyset$ by definition of union. Thus $A \subseteq A \cup \emptyset$. 
+
+Hence we conclude $A = A \subseteq \emptyset$.
+\end{proof}
+
+% Problem 2
+\begin{thm}
+There exist infintely many primes.
+\end{thm}
+
+\begin{proof}
+First note that primes do exist, so the following argument is not vacuous. 
+
+Suppose there is only a finite number of primes, $n$. Then $n \in \mathbb{N}$ and $n \neq 0$. Let us list the primes in inceasing order: 
+\begin{equation*}
+p_1, p_2, p_3, ..., p_{n-1}, p_{n}
+\end{equation*}.
+Let $M = p_1, p_2, p_3, ..., p_{n-1}, p_{n} + 1$. Clearly $M > 1$ and $M > p_i$ for $i = 1,2,3, ... n$ so $M$ must not be on the list of primes. By the Fundamental Theorom of Arithmetic (I), every positive integer is either $1$, prime, or composite, so $M$ must be composite. By the Fundamental Theorem of Arithmetic (II), every positive integer must have prime divisors so $M$ must have at least $1$ prime divisor. Thus there exists $i \in \{1,2,...n\}$ such that $p_i \vert M$ and there exists $y
+\in \mathbb{Z}$ such that $M = p_iz$. Then % I think it should be $z \in \mathbb{Z}$ but handout said $y \in \mathbb{Z}$
+\begin{equation*}
+1 = M - p_1p_2...p_{n-1}p{n} = p_{iz} - p_1p_2...p_{i-1}p_ip_{i+1}...p_n
+\end{equation*}
+and so $1=p_i(z-p_1p_2...p_{i-1}p_{i+1}...p_n)$, implying $p_i \vert 1$. This is impossible! Therefore our assumption from start is false: There cannot exist a finite number of primes. We must conclude that there exists infinitely many primes.
+\end{proof}
+
+% Problem 3
+\begin{fact}
+The geometric series
+\end{fact}
+\begin{equation*}
+\sum_{n=0}^{\infty}ar^{n-1} = a + ar + ar^2 + ...
+\end{equation*}
+is convergent with sum $\frac{a}{1-r}$ when $|r| < 1$. If $|r| \geq 1$ then the geometric series diverges.
+
+% Problem 4
+\begin{ex*} 
+\begin {equation*}
+0.\bar{9} = \frac{9}{10} \sum_{n=0}^{\infty}(\frac{1}{10})^n = \frac{\frac{9}{10}}{1-\frac{1}{10}} = 1
+\end{equation*}
+\end{ex*}
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+  \end{footnotesize}
+\end{center}
+\end{document}
