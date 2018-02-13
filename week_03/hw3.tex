@@ -1,0 +1,85 @@
+\documentclass[11pt]{article}
+\title{CSC 490: \LaTeX\ -- Week 3}
+\author{Dor Rondel}
+
+% packages
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{hyperref,color}
+\usepackage{twoopt}
+\usepackage[margin=1in]{geometry}
+
+%  set the style for the theorems; optional
+\theoremstyle{definition}
+
+% new theorems
+\newtheorem{prac}{Practice Problem}
+\newtheorem{satz}{Satz}
+\newtheorem{ph}[prac]{Practice Homework}  % follow prac counter
+
+% new commands
+\newcommand{\dmd}{\diamondsuit}
+\newcommand{\rem}[1]{\pmod{#1}}
+\newcommandtwoopt{\intZeroOne}[3][0][1]{\int_{#1}^{#2} #3}
+
+% new environments
+\newenvironment{gbl}{\par\color{green}\Large\textbf}{\par}
+
+\begin{document}
+\maketitle
+
+% first problem
+\section{Theorem Definition Practice}
+\vline
+\begin{prac} initial counter \end{prac}
+
+\begin{satz} independent numbering \end{satz}
+
+\begin{satz}
+independent numbering \#2
+\end{satz}
+
+\begin{ph}
+dependent numbering
+\end{ph}
+
+\begin{ph}
+dependent numbering \#2
+\end{ph}
+
+\begin{satz}
+independent numbering \#3
+\end{satz}
+
+\vline
+
+% second problem
+\section{New Command Practice}
+\vspace{4px}
+Instead of writing \verb \diamondsuite I can now write \verb \dmd to produce $\dmd$ \\
+I can now use the \verb \rem to replicate \verb \pmod behavior, for example $12 \rem{8739}$ \\ 
+To make a definite integral with I can write \verb \intZeroOne{x^5} to produce $\intZeroOne{x^5}$
+
+
+\vline
+
+% third problem
+\section{New Environment Practice}
+\begin{verbatim}
+\newenvironment{gbl}{\Large\textbf\par\color{green}}{\par}
+\end{verbatim}
+I expect to see indented green bolded text with a larger font size than this comment. 
+
+% fourth problem
+\section{New Environment Usage}
+\begin{gbl}
+In this assignment I used three theorems, which do the following.
+\begin{prac}\end{prac}
+\begin{satz}\end{satz}
+\begin{ph}\end{ph}
+Additionally, I also made three new commands, to simplify the creation process, namely: \\
+\verb \dmd $\dmd$ - which takes no arguments \\
+\verb \rem \hspace{2px} $12 \rem{300}$ - which takes one argument \\
+\verb \intZeroOne $\intZeroOne{\frac{\sin{x} + 6}{\tan{x^4}}}$ - which takes one argument and has 2 default arguments.
+Finally, as you can see, the text is bold, large, and green, because it was within the gbl environment made just to do that.
+\end{gbl}
+\end{document}
