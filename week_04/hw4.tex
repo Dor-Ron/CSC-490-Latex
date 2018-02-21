@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\title{CSC 490: HW 4}
+\author{Dor Rondel}
+
+% packages
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{hyperref,color}
+\usepackage[margin=1in]{geometry}
+
+\newenvironment{Array}[2][1]
+  {\def\arraystretch{#1}\array{#2}}
+  {\endarray}
+
+\begin{document}
+% Problem 1
+\section{Alignment}
+
+\begin{align*}
+0.\bar{9} &= 0.9 + 0.09 + 0.009 + 0.0009 + ... \\
+          &= \frac{9}{10} + \frac{9}{100} + \frac{9}{1000} + \frac{9}{1000} + ... \\
+          &= \frac{9}{10} + \frac{9}{10^2} + \frac{9}{10^3} + \frac{9}{10^4} + ... \\
+          &= \frac{9}{10}(1 + \frac{9}{10} + \frac{9}{10^2} + \frac{9}{10^3} + ...) \\
+          &= \frac{9}{10}\sum_{n=0}^{\infty}(\frac{1}{10})^n
+\end{align*}
+
+Since $0.\bar{9}$ is a geometric series with $a = \frac{9}{10}$ and $r = \frac{1}{10}$, where $|r| < 1$, we know that the geometric series converges to
+$$ 
+   0.\bar{9} = 
+   \frac{a}{1-r} = 
+   \frac{\frac{9}{10}}{1-\frac{1}{10}} =
+   \frac{\frac{9}{10}}{\frac{9}{10}} = 1 
+$$ 
+.  
+
+% Problem 2
+\section{Tabular}
+\begin{center}
+\begin{tabular}{l|c|c}
+ & Vancouver & Quebec \\
+\hline
+Wiper Blades & 20 & 15\\
+\hline
+Cleaning Fluid & 10 & 12\\
+\hline
+Floor Mats & 8 & 4\\
+\end{tabular}
+\end{center}
+
+% Problem 3
+\section{Arrays}
+
+\[
+\begin{bmatrix}
+  7 & 3 & 2 \\ 6 & 2 & 10
+\end{bmatrix}
+\begin{bmatrix}
+  20 & 15 \\ 10 & 12 \\ 8 & 4
+\end{bmatrix}
+=
+\begin{bmatrix}
+  266 & 189 \\ 220 & 154
+\end{bmatrix}
+\]
+
+
+\end{document}
