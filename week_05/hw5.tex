@@ -1,0 +1,74 @@
+\documentclass{article}
+
+% used in maketitle
+\title{HW 5}
+\author{Dor Rondel}
+
+% packages
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{hyperref,color}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx, caption}
+\usepackage{float}
+
+
+\begin{document}
+
+% Part 1, latex auto-generated lists
+
+\listoffigures
+
+\listoftables
+
+% Part 2
+
+\section{Neural Network}\label{nn}
+
+\begin{minipage}{0.45\linewidth}\label{ann}
+\begin{figure}[H]
+\centering
+\caption{Artificial Neural Networks}
+\includegraphics[width=3in]{nn}
+\end{figure}
+\end{minipage}
+
+\vspace{0.2in}
+
+Neural Networks ~\ref{ann} are really good at pattern detection.
+Some would say they are better than ~\ref{svm} ( see ~\ref{svmm} ).
+
+\section{Support Vector Machines}\label{svm}
+
+Support Vector Machines ~\ref{svm} are a tool used in machine learning.
+Some would say they are better than ~\ref{nn} ( see ~\ref{ann} ).
+
+\begin{minipage}{0.45\linewidth}\label{svmm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=3in]{svm}
+\caption{Support Vector Machine}
+\end{figure}
+\end{minipage}
+
+\section{Natural Language Processsing}\label{nlp}
+\begin{minipage}{0.45\linewidth}\label{tbl}
+\begin{table}[H]
+\centering
+\begin{tabular}{c|l}
+Option & Description\\
+\hline
+H & ``Put the figure HERE!''\\
+h & ``Put the figure here, please.''\\
+t & ``Put the figure at the top of the page.''\\
+b & ``Put the figure on the bottom of the page.''\\
+p & ``Put the figure on a special page at the end for figures.''\\
+\end{tabular}
+\caption{Options for Figures and Tables}
+\end{table}
+\end{minipage}
+
+\vspace{0.2in}
+
+The preceding table ~\eqref{tbl} was not written by me, it was copied. It's content are relevant to code that was used in ~\eqref{nn} which contains ~\eqref{ann}.
+
+\end{document}
