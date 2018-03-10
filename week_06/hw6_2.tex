@@ -1,0 +1,24 @@
+\documentclass[11pt]{article}
+\title{CSC 490: \LaTeX\ -- Week 6 HW}
+\author{Dor Rondel}
+
+% packages
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{hyperref,color, natbib}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx, float, caption}
+
+\renewcommand{\refname}{Source List}
+
+\begin{document}
+
+% Solution
+\cite{GATE} was a great book. \\
+As was \cite{OMEN}. \\
+Neither has anything to do with \cite{AI}. \\
+\nocite{ANN}
+
+\bibliographystyle{alpha}
+\bibliography{hw6_ref}
+
+\end{document}
