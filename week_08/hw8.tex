@@ -1,0 +1,35 @@
+\documentclass[11pt]{article}
+
+% identifying info
+\title{CSC 490: \LaTeX\ -- HW 8}
+\author{Dor Rondel}
+
+% packages
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{hyperref,color}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx, float, caption}
+
+% new packages!
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{tikzpicture}
+\node (a) at (0,0) {90};
+\node (b) at (-1, -1) {9};
+\node (c) at (1, -1) {10};
+\node (d) at (-1, -2) {3};
+\node (e) at (-2, -2) {3};
+\node (f) at (1, -2) {5};
+\node (g) at (2, -2) {2};
+
+\draw (a) to (b)
+(a) to (c)
+(b) to (d)
+(b) to (e)
+(c) to (f)
+(c) to (g);
+\end{tikzpicture}
+
+\end{document}
