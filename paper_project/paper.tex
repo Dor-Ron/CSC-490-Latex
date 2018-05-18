@@ -1,0 +1,170 @@
+\documentclass[11pt]{article}
+\title{The Effects of Temperature on Oxygen Consumption and Ventilation Rates for Carassius \textit{auratus}}
+\author{Dor Rondel and Franclie Saint-Fort}
+
+% packages
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{hyperref,color, natbib}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx, float, caption}
+
+\newcommand\sectiontitle[1]{\huge{\textit{\textbf{ #1 }}}}
+\newcommand\spacer[1][5px]{\vspace{#1}}
+
+
+\renewcommand{\refname}{References}
+
+
+\begin{document}
+\maketitle
+
+\newpage
+
+\sectiontitle{Abstract}
+
+\spacer
+
+{\normalsize This experiment was performed to see how the goldfish (C. \textit{auratus}) ventilation rate and oxygen consumption would change under different temperatures. This is important because, as ectotherms goldfish face a double problem when it comes to respiration, as their oxygen demand increases while their oxygen supply decreases under warmer temperatures. Due to this, we hypothesized that as ectotherms, there would be an increase in the metabolic rate requiring more oxygen consumption that would result in a larger ventilation rate for goldfish under warmer climates. We put two different treatments of fish in different fish tanks with approximately a 10-celsius temperature difference and measured oxygen consumption and ventilation per fifteen minute intervals for an hour, in order to eventually find the predicted increase in those rates per a 10° C increase in temperature (denoted as $Q_{10}$) for the fish. The The alternative hypothesis was rejected, since both t-tests for combined oxygen consumption and combined ventilation rate were statistically insignificant and the $Q_{10}$ value wasn’t between the expected 2-3 range.}
+
+\spacer\spacer
+
+\sectiontitle{Introduction}
+
+\spacer
+
+{\normalsize Cellular respiration is a biological process most animals undergo in order to proficiently produce ATP (as opposed to anaerobic respiration) \cite{herb}. This process relies on the on oxygen acquisition and carbon dioxide elimination. For maritime species, oxygen is usually obtained from the ocean \cite{sadej}. However, larger organisms cannot obtain sufficient amounts of oxygen simply through diffusion, and have thus developed respiratory organs connected to their circulatory system using hemoglobin to transfer the oxygen and carbon dioxide particles. For fish, who are a maritime species, and thus obtain oxygen through the water, oxygen availability is a function dependent on both the temperature and salinity of the water \cite{reim}. They rely on a counter-current exchange system to ensure efficient oxygen extraction by the gills from the ocean, and get rid of the carbon dioxide which is diffused by the blood into the ocean \cite{wells}. In order to find the ventilation rate of the fish in their given environment, you could use a digital thermo-anemometer. }
+
+\spacer
+
+{ \normalsize Goldfish are also ectotherms, this means that their metabolic rate is dependent on the temperature of their environment \cite{john}. To measure the metabolic rate, you need to find the oxygen consumption of the fish, or in other words,  the amount of oxygen consumed by the fish over a given interval subtracted from the original oxygen supply. This leads to a potential double problem however, as ectotherms’ metabolic rate is dependent on temperature. This means that generally the oxygen consumption rate would increase under warmer temperatures, but that is a problem since the amount of oxygen dissolved in water decreases as temperature increases. In other words there is an increase in oxygen demand for ectotherms under warmer temperatures, but a decrease in oxygen supply under water. }
+
+\spacer
+
+{\normalsize We wanted to see if metabolic rates (oxygen consumption) and ventilation rates would follow a predictable pattern under different temperatures for goldfish of species C. \textit{auratus} based on our observations. Temperature isn’t the only variable affecting metabolic rate, but we attempted to control for others such as movement and size (described in the methods section). We hypothesized that under warmer temperatures C. \textit{auratus} would be forced to respirate more, increasing the metabolic rate, combined oxygen consumption rate, and ventilation rate. This is because C. \textit{auratus} are ectotherms, so a higher temperature would require a greater metabolic rate, effectively meaning a higher ventilation rate, which implies greater oxygen consumption. }
+
+\spacer\spacer
+
+\sectiontitle{Materials and Methods}
+
+\spacer
+
+\textit{\Large{Fish}}
+
+\spacer
+
+{\normalsize Two goldfish, Carassius \textit{auratus}, ideally similar in size to standardize respiration capacity, were placed in two separate tanks of spring water, at temperatures of approximately 25°C and 15°C. Carefully place the fish in the tanks using a beaker (whose weight should be recorded in order to properly calculate the weight of the fish). Water leakage is taken account for by the digital thermometer updating its reading. Leave 10 minutes for the fish to adjust their respiration and metabolism to the new different environments. Additionally, once in their separate containers within the water tanks, use a sponge in attempt to standardize movements yet still allow for exchange of gases. }
+
+\spacer
+
+\textit{\Large{Measurements}}
+
+\spacer
+
+{\normalsize Three team members participate in the counting of the goldfish’s respiration. One team member keeps the time using a stopwatch (we used thirty second intervals), while the other two team members count the amount of times the goldfish open their mouths (which symbolizes respiration occurring). When recording the values you double the amount of times the fish opened their mouths. Additionally, you need to record the temperature the fish are in, in order to properly analyze temperature’s effects on respiration, by using a thermometer. Finally, you also need to record the initial oxygen concentrations for future calculations, measured in (mg/L), by using calibrated probes of a dissolved oxygen sensor.}
+
+\textit{\Large{Calculations}}
+
+\spacer
+
+{\normalsize First you need to convert the readings you recorded in $O_2/L$ of spring water to mL of $O_2/L$. You achieve that by dividing the values you recorded by $1.43$. Then, to account for different mass of the fish being tested, you divide that value by the corresponding fish’s weight, which gives you a (mL/g) measurement. You do that for each of the five, fifteen minute intervals, and subtract them from the initial readings at zero minutes, to ascertain the total amount of oxygen consumption of the fish over the elapsed time period. Doing such will allow you to arrive at the final consumption value measured in $(mL O_2/g/hr)$}
+
+
+\newpage
+\sectiontitle{Results}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=4in]{vent}
+\caption{Ventilation vs. Time Graph}
+\end{figure}
+
+\spacer\spacer
+
+{\Large
+
+\begin{tabular}{c|c|c|c}
+Treatment & Mean Ventilation Rate & Standard Deviation & p-Value\\
+\hline
+warm & $93.4765$ & $28.77754$ & $1.4325^{-5}$\\
+\hline
+cold & 25.2813 & 23.0945 & $1.4325^{-5}$ \\
+\hline
+\end{tabular}
+
+}
+{\small \textit{\centerline{Table 1: Mean Ventilation Rate T-Test Table}}}
+
+\spacer\spacer
+
+{\normalsize
+For the warmer treatment, there seems to be a somewhat linear-looking steady rise in ventilation rate throughout the hour. The standard deviations for the intervals do vary quite a bit; however, there seems to be an overall positive correlation between ventilation rate and warmer temperatures based off the results shown in figure 1. Colder temperatures on the other hand are a bit more sporadic. The initial ventilation rate was higher than any other ventilation rate throughout the hour. However after the fifteen minute mark dip, there seems to be a steady ventilation rate recovery. Here too, the standard deviations go from very minute to bigger than the ventilation rate itself, making the colder treatment trend quite difficult to predict. 
+\spacer
+The overall mean ventilation rate for all the 16 fish being tested in each treatment were compared in a statistical student’s t-test. The result of the t-test was $1.4325^{-5}$, which is much smaller than the required 1.697 for a degree of freedom of thirty $((16-1) + (16-1) = 30)$. }
+
+\spacer\spacer
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=4in]{avgvent}
+\caption{Combined Mean Ventilation Rate}
+\end{figure}
+
+\spacer\spacer
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=4in]{oxy}
+\caption{Oxygen Consumption vs. Time Graph}
+\end{figure}
+
+\spacer\spacer
+
+{\normalsize As with the ventilation rate graph with the warm treatment, there is a steady increase in a linear-like shape for the oxygen consumption over the course of the hour. The standard deviation seemed reasonable for the warmer treatment, as can be seen from the large ticks in figure 3. For the cooler treatment, there is an initial drop in oxygen consumption but then a steady rise from the fifteen minute mark to the end of the hour. The standard deviations for the colder treatment seem much less reasonable than the warmer treatment; however, all time intervals follow a similar trend, which is that the standard deviations are larger than the total oxygen consumption over that given amount of time.
+
+Once again, the mean values taken from the warmer and cooler treatments were compared in a statistical student’s t-test; however, this time it was their mean oxygen consumption that was used as the basis for the test. The result from the t-test was 0.30073, for the degrees of freedom of 30, lower than the required 1.697 for 5\% certainty. 
+}
+
+\spacer\spacer
+
+{\Large
+
+\begin{tabular}{c|c|c|c}
+Treatment & Mean Oxygen Consumption Rate $(mL O_2/g/hr)$ & Standard Deviation & p-Value\\
+\hline
+warm & $0.9003$ & $0.4177$ & $0.30073$\\
+\hline
+cold & 0.6718 & 1.6136 & $0.30073$ \\
+\hline
+\end{tabular}
+
+}
+{\small \textit{\centerline{Table 2: Mean Oxygen Consumption T-Test}}
+
+\spacer\spacer
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=4in]{comboxy}
+\caption{Combined Oxygen Consumption Rates}
+\end{figure}
+
+\spacer\spacer
+
+\newpage
+
+\sectiontitle{Discussion}
+
+\spacer\spacer
+
+{\normalsize The t-test result for both the ventilation rate comparison and the oxygen consumption rate comparison suggests that the null hypothesis is supported and that we can not ascertain that weather has a definitive effect on either ventilation or oxygen consumption in C. \textit{auratus} goldfish. This is because the values the t-test yielded were both lower than the required 1.697 for 5\% uncertainty for the degrees of freedom of 30. There was however a noticeable trend between warmer weather and oxygen consumption rate as well as between warmer weather and ventilation rates, where we noticed a positive correlation in an almost linear-like fashion. This can be seen from figures 1 and 3, where the warm treatment’s columns rise gradually going left to right. For colder climates it is harder to say that there was a definitive trend, since the results were more sporadic for that treatment.
+
+Some possible errata in the experiment were some empty data points, lost due to a bookkeeping error. Additionally, the fish were originally exposed to a much colder climate, where we noticed they were barely ventilating, and due to that decided to change the temperature of the cooler environment. This might’ve has some effect on the experimental results. Additionally, as always, human error can be responsible for a mishap in the  experiment, for example miscounting the amount of times the fish opened their mouths in a given time interval. 
+
+Some future research avenues related to this experiment include but are not limited to: testing a different species of fish and seeing if their oxygen consumption and ventilation would be affected by similar weather conditions, using several treatments at different temperatures to see at which exact temperature would C. \textit{auratus}’ ventilation and oxygen consumption begin to increase/decrease, trying  similar experiment on a mammal, or a species which closer resembles humans, to acquire a greater sense of relevance for human progression research. }
+
+{\normalsize \newpage
+\bibliographystyle{alpha}
+\bibliography{sources}}
+
+
+\end{document}
